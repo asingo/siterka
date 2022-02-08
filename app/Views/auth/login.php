@@ -32,6 +32,7 @@
             <div class="animate form login_form">
                 <section class="login_content">
                     <p style="color:red"><?= session()->getFlashdata('success'); ?></p>
+                    <p style="color:red"><?= session()->getFlashdata('error'); ?></p>
                     <?php
                     $session = session();
                     $login = $session->getFlashdata('login');

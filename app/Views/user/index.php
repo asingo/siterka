@@ -1,1 +1,1 @@
-<?= $this->extend('layout/user/template'); ?>
+<?= 'berhasil login'; ?>

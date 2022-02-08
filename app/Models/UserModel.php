@@ -19,4 +19,22 @@ class UserModel extends Model
     {
         return $this->where(['callsign' => $callsign])->first();
     }
+    public function sync($id)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('sinkronisasi');
+        $builder->insert([
+            'id_orang' => $id,
+            'sync_status' => 1
+        ]);
+        return $builder;
+    }
+    public function getSync($id)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('sinkronisasi');
+        $builder->get();
+        // $builder->where('id_orang', $id)->get;
+        return $builder;
+    }
 }

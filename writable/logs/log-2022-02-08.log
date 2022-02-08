@@ -260,3 +260,227 @@ CRITICAL - 2022-02-08 02:43:13 --> Object of class DateTime could not be convert
 #7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
 #9 {main}
+CRITICAL - 2022-02-08 09:24:25 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:24:47 --> Illegal string offset 'pass'
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:27:38 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:28:11 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:28:13 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:28:41 --> Illegal string offset 'pass'
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:29:16 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:29:18 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:29:20 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:29:31 --> There is no data to insert.
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#3 /home/popo/Documents/siterka/app/Models/UserModel.php(27): CodeIgniter\BaseModel->save()
+#4 /home/popo/Documents/siterka/app/Controllers/User.php(77): App\Models\UserModel->sync()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#10 {main}
+CRITICAL - 2022-02-08 09:30:12 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:30:15 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:30:27 --> There is no data to insert.
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#3 /home/popo/Documents/siterka/app/Models/UserModel.php(27): CodeIgniter\BaseModel->save()
+#4 /home/popo/Documents/siterka/app/Controllers/User.php(77): App\Models\UserModel->sync()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#10 {main}
+CRITICAL - 2022-02-08 09:34:01 --> Trying to access array offset on value of type null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doConfirm()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 09:48:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#5 {main}
+CRITICAL - 2022-02-08 09:51:48 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#5 {main}
+CRITICAL - 2022-02-08 09:57:19 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /home/popo/Documents/siterka/app/Models/UserModel.php on line 36
+#0 /home/popo/Documents/siterka/app/Models/UserModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#1 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#7 {main}
+CRITICAL - 2022-02-08 09:57:42 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /home/popo/Documents/siterka/app/Models/UserModel.php on line 36
+#0 /home/popo/Documents/siterka/app/Models/UserModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#1 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#7 {main}
+CRITICAL - 2022-02-08 09:57:43 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /home/popo/Documents/siterka/app/Models/UserModel.php on line 36
+#0 /home/popo/Documents/siterka/app/Models/UserModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#1 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#7 {main}
+CRITICAL - 2022-02-08 09:58:19 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /home/popo/Documents/siterka/app/Models/UserModel.php on line 36
+#0 /home/popo/Documents/siterka/app/Models/UserModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#1 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#7 {main}
+ERROR - 2022-02-08 10:03:11 --> Not unique table/alias: 'sinkronisasi'
+CRITICAL - 2022-02-08 10:03:11 --> Not unique table/alias: 'sinkronisasi'
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /home/popo/Documents/siterka/app/Models/UserModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#11 {main}
+CRITICAL - 2022-02-08 10:05:49 --> Call to undefined method App\Models\AuthModel::getSync
+#0 /home/popo/Documents/siterka/app/Controllers/Auth.php(103): CodeIgniter\Model->__call()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 10:06:56 --> Undefined index: username
+#0 /home/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 10:06:57 --> Undefined index: username
+#0 /home/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 10:09:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-08 10:10:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}

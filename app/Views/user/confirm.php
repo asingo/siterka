@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Konfirmasi Akun | SiTerKa ORARI Lokal Klaten</title>
 
     <!-- Bootstrap -->
     <link href="/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,8 +39,8 @@
         <div class="login_wrapper">
             <div class="animate form login_form">
                 <section class="login_content">
-                    <!-- <p style="color:red">asdasd</p> -->
-                    <form method="post">
+                    <p style="color:red"><?= session()->getFlashdata('error'); ?></p>
+                    <form method="post" action="doConfirm">
                         <h2>Konfirmasi Akun SiTerKa Anda</h2>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <p>Callsign Anda</p>
@@ -56,6 +56,8 @@
                                 <input type="text" name="lakuiar" disabled value="<?= $lakuiar ?>" class="form-control has-feedback-left" id="single_cal4" aria-describedby="inputSuccess2Status4">
                                 <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                                 <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+                                <input type="hidden" name="user" value="<?= session()->get('user'); ?>">
+                                <input type="hidden" name="id" value="<?= $anggota['id']; ?>">
                             </div>
                         </div>
                         <div class="clearfix"></div>

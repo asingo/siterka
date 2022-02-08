@@ -90,6 +90,7 @@ class Auth extends BaseController
                 //jika benar, arahkan user masuk ke aplikasi 
                 $sessLogin = [
                     'isLogin' => true,
+                    'id' => $user['id'],
                     'user' => $user['user'],
                     'name' => $user['name'],
                     'role' => $user['role'],
@@ -98,6 +99,11 @@ class Auth extends BaseController
                 $this->session->set($sessLogin);
                 //cek role dari session
                 if ($this->session->get('role') != 1) {
+                    $id = $user['id'];
+                    if (!$this->authModel->getSync($id)) {
+                        session()->setFlashdata('error');
+                        return redirect()->to('/auth/login');
+                    }
                     return redirect()->to('/user');
                 }
 

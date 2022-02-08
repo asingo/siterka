@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd09f05267512e9a56dc5ea79f74756e",
+    "content-hash": "b10ba03a89c6bfa5e5b6553307bf0045",
     "packages": [
         {
             "name": "codeigniter4/framework",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/framework.git",
-                "reference": "c4edeb3680da7b0f829a5ad597c1c159fe01b902"
+                "reference": "eabd7dc9ac803ac3c7549d1dea939fe98bd0e4db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/c4edeb3680da7b0f829a5ad597c1c159fe01b902",
-                "reference": "c4edeb3680da7b0f829a5ad597c1c159fe01b902",
+                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/eabd7dc9ac803ac3c7549d1dea939fe98bd0e4db",
+                "reference": "eabd7dc9ac803ac3c7549d1dea939fe98bd0e4db",
                 "shasum": ""
             },
             "require": {
@@ -57,12 +57,7 @@
             ],
             "description": "The CodeIgniter framework v4",
             "homepage": "https://codeigniter.com",
-            "support": {
-                "forum": "http://forum.codeigniter.com/",
-                "slack": "https://codeigniterchat.slack.com",
-                "source": "https://github.com/codeigniter4/CodeIgniter4"
-            },
-            "time": "2022-01-10T01:40:27+00:00"
+            "time": "2022-01-24T17:41:56+00:00"
         },
         {
             "name": "geeklabs/ci4-breadcrumbs",
@@ -78,7 +73,6 @@
                 "reference": "b24aa79dd33f1a813953d19ee5499c3f5d7debe2",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -290,5 +284,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }
