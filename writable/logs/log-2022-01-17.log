@@ -1,0 +1,374 @@
+ERROR - 2022-01-17 04:30:31 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-17 04:30:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 06:01:47 --> "M-j-Y" is not a valid datetime format
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/I18n/Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('M-j-Y')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(39): CodeIgniter\I18n\Time::createFromFormat('M-j-Y', '02/13/2001', 'Asia/Jakarta')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-17 06:02:17 --> "j-M-Y" is not a valid datetime format
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/I18n/Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(39): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', '02/13/2001', 'Asia/Jakarta')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-17 06:02:26 --> "d-M-Y" is not a valid datetime format
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/I18n/Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('d-M-Y')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(39): CodeIgniter\I18n\Time::createFromFormat('d-M-Y', '02/13/2001', 'Asia/Jakarta')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-17 07:53:24 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 07:54:21 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 07:54:26 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 07:54:28 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 07:54:29 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 07:54:32 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 31)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(35): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 08:04:19 --> Undefined property: App\Controllers\Admin::$AdminModel
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 189)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:08:04 --> Undefined property: App\Controllers\Admin::$AdminModel
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 189)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:08:11 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in /Users/popo/Documents/anggota/app/Controllers/Admin.php on line 152
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(152): CodeIgniter\I18n\Time::parse(NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:08:19 --> Undefined property: App\Controllers\Admin::$AdminModel
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 189)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:10:11 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in /Users/popo/Documents/anggota/app/Controllers/Admin.php on line 152
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(152): CodeIgniter\I18n\Time::parse(NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:16:49 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in /Users/popo/Documents/anggota/app/Controllers/Admin.php on line 154
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(154): CodeIgniter\I18n\Time::parse(NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:19:42 --> DateTime::format() expects exactly 1 argument, 2 given
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(155): DateTime->format('Y-m-d', NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:19:45 --> DateTime::format() expects exactly 1 argument, 2 given
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(155): DateTime->format('Y-m-d', NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:21:26 --> DateTime::format() expects exactly 1 argument, 2 given
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(155): DateTime->format('Y-m-d', Object(DateTime))
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:21:48 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in /Users/popo/Documents/anggota/app/Controllers/Admin.php on line 156
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(156): CodeIgniter\I18n\Time::parse(NULL)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:22:02 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:22:05 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:22:07 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:22:08 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:22:10 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:22:11 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:23:54 --> Unclosed '{' on line 9
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/doRegiste...')
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin/doRegiste...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:24:18 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-17 08:24:25 --> Undefined property: App\Controllers\Admin::$AdminModel
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 211)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-17 08:26:24 --> Call to a member function getError() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+ERROR - 2022-01-17 08:26:29 --> Table 'anggota.anggota' doesn't exist
+CRITICAL - 2022-01-17 08:26:29 --> Table 'anggota.anggota' doesn't exist
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `an...', 0)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/popo/Documents/anggota/app/Controllers/Admin.php(228): CodeIgniter\BaseModel->save(Array)
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#10 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#14 {main}
+ERROR - 2022-01-17 08:26:53 --> Column 'callsign' cannot be null
+CRITICAL - 2022-01-17 08:26:53 --> Column 'callsign' cannot be null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/popo/Documents/anggota/app/Controllers/Admin.php(228): CodeIgniter\BaseModel->save(Array)
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#10 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#14 {main}
+ERROR - 2022-01-17 08:27:34 --> Column 'callsign' cannot be null
+CRITICAL - 2022-01-17 08:27:34 --> Column 'callsign' cannot be null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/popo/Documents/anggota/app/Controllers/Admin.php(228): CodeIgniter\BaseModel->save(Array)
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doRegister()
+#10 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#14 {main}
+CRITICAL - 2022-01-17 08:41:02 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 32)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(42): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 08:42:41 --> Undefined variable $title
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 17)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(42): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 08:42:43 --> Undefined variable $title
+#0 /Users/popo/Documents/anggota/app/Views/admin/registerAnggota.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 17)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/registerA...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(42): view('admin/registerA...')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->register()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-01-17 23:51:14 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-17 23:51:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-17 23:51:49 --> Undefined array key "username"
+#0 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}

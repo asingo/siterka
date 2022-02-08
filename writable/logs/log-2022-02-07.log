@@ -1,0 +1,32 @@
+ERROR - 2022-02-07 02:52:48 --> Unknown column 'user' in 'where clause'
+CRITICAL - 2022-02-07 02:52:48 --> Unknown column 'user' in 'where clause'
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /Users/popo/Documents/anggota/app/Controllers/User.php(18): CodeIgniter\BaseModel->first()
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#12 {main}
+CRITICAL - 2022-02-07 03:00:40 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php on line 728
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(728): CodeIgniter\Database\BaseBuilder->like('callsign', NULL)
+#1 /Users/popo/Documents/anggota/app/Controllers/User.php(41): CodeIgniter\Model->__call('like', Array)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doVerify()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-02-07 03:00:47 --> Call to undefined method App\Models\UserModel::andLike
+#0 /Users/popo/Documents/anggota/app/Controllers/User.php(41): CodeIgniter\Model->__call('andLike', Array)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doVerify()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}

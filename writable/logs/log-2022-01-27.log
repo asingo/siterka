@@ -1,0 +1,264 @@
+CRITICAL - 2022-01-27 00:28:24 --> unlink(img/ktp/1643205097_45c5cc911d308ff5cb39.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/ktp/...', '/Users/popo/Doc...', 242)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(242): unlink('img/ktp/1643205...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditKtp()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 00:31:15 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('kta', '123')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 00:31:30 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('kta', '123')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 00:32:44 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('kta', '123')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 00:32:50 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('kta', '123')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 00:34:19 --> Invalid file: admin/editKta.php
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/editKta.p...')
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editKta', Array, true)
+#2 /Users/popo/Documents/anggota/app/Controllers/Admin.php(115): view('admin/editKta', Array)
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->editKta('123')
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#8 {main}
+CRITICAL - 2022-01-27 00:39:33 --> syntax error, unexpected token ";", expecting ")"
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/doEditKtp')
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin/doEditKtp')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-27 00:41:29 --> unlink(img/kta/1643265655_5eb6a60c95b5efe72a3e.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/kta/...', '/Users/popo/Doc...', 300)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(300): unlink('img/kta/1643265...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditKta()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 00:44:46 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('kta')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-01-27 06:47:26 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-27 06:47:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-01-27 06:55:33 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-27 06:55:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 06:55:37 --> Undefined array key "username"
+#0 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+ERROR - 2022-01-27 06:55:42 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-27 06:55:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 07:05:58 --> Too few arguments to function App\Controllers\Admin::detail(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-27 07:06:03 --> Too few arguments to function App\Controllers\Admin::detail(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-27 07:42:06 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 07:42:50 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(67): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit('foto')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-27 07:43:03 --> mkdir(): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permis...', '/Users/popo/Doc...', 176)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(176): mkdir('img/anggota/', 511, true)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('img/anggota/')
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(161): CodeIgniter\HTTP\Files\UploadedFile->move('img/anggota/', '1643290983_e105...')
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-27 07:44:04 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 07:51:31 --> Could not move file php6raEbA to img/anggota/ ()
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php6raEbA', 'img/anggota/', '')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(161): CodeIgniter\HTTP\Files\UploadedFile->move('img/anggota/', '1643291491_35f2...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 07:52:12 --> Could not move file phpHfnLrB to img/anggota/ ()
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpHfnLrB', 'img/anggota/', '')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(161): CodeIgniter\HTTP\Files\UploadedFile->move('img/anggota/', '1643291532_4bd7...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 07:55:31 --> Could not move file phpam9GKi to img/anggota/ ()
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpam9GKi', 'img/anggota/', '')
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(161): CodeIgniter\HTTP\Files\UploadedFile->move('img/anggota/', '1643291731_8a6d...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 08:00:45 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 08:00:49 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 08:01:18 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}
+CRITICAL - 2022-01-27 08:01:22 --> unlink(img/anggota/): Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/angg...', '/Users/popo/Doc...', 164)
+#1 /Users/popo/Documents/anggota/app/Controllers/Admin.php(164): unlink('img/anggota/')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->doEditFoto()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#7 {main}

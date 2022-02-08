@@ -1,0 +1,67 @@
+ERROR - 2022-02-05 06:04:32 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-05 06:04:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-05 06:40:29 --> Undefined variable $currentPage
+#0 /Users/popo/Documents/anggota/app/Views/admin/search.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 40)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/search', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(675): view('admin/search')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->search()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-05 06:41:20 --> Undefined variable $anggota
+#0 /Users/popo/Documents/anggota/app/Views/admin/search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 41)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/search', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(675): view('admin/search')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->search()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-05 06:41:56 --> syntax error, unexpected token ";"
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/search', Array, true)
+#2 /Users/popo/Documents/anggota/app/Controllers/Admin.php(675): view('admin/search')
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->search()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#8 {main}
+CRITICAL - 2022-02-05 07:11:32 --> Undefined property: App\Controllers\Admin::$orangModel
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 53)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->list()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-05 08:10:10 --> Call to a member function links() on null
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/daftar', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(62): view('admin/daftar', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->list()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}

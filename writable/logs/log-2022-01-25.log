@@ -1,0 +1,406 @@
+ERROR - 2022-01-25 01:54:59 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-25 01:54:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 01:57:46 --> Undefined array key "username"
+#0 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-25 06:38:46 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 06:38:48 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 06:38:49 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:22:37 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:23:20 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:29:56 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:29:59 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:31:51 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:31:57 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:32:04 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:32:09 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:37:18 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:39:02 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:39:06 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:39:11 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:39:21 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:39:43 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:40:31 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:40:43 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:40:49 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:41:01 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:43:15 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:43:20 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:43:25 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:46:47 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(66): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-25 07:53:05 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 07:56:06 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 07:56:13 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 07:57:06 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 07:58:29 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 07:58:34 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:01:13 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:01:39 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:03:31 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:04:06 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:04:09 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-25 08:05:23 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}

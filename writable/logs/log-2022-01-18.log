@@ -1,0 +1,288 @@
+CRITICAL - 2022-01-18 00:05:57 --> Undefined variable $anggota
+#0 /Users/popo/Documents/anggota/app/Views/admin/daftar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 40)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/daftar', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(38): view('admin/daftar')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->list()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 01:55:04 --> Undefined variable $title
+#0 /Users/popo/Documents/anggota/app/Views/admin/detail.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 17)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(55): view('admin/detail', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 01:55:13 --> Undefined variable $title
+#0 /Users/popo/Documents/anggota/app/Views/admin/detail.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 17)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(55): view('admin/detail', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 01:55:56 --> syntax error, unexpected single-quoted string "anggota", expecting "]"
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/detail/1')
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin/detail/1')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 01:56:02 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 01:58:26 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 01:59:28 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 02:01:00 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 02:01:01 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 02:01:02 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 02:01:13 --> Cannot use object of type App\Models\AdminModel as array
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#3 /Users/popo/Documents/anggota/app/Controllers/Admin.php(56): view('admin/detail', Array)
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-01-18 02:05:27 --> Undefined variable $validation
+#0 /Users/popo/Documents/anggota/app/Views/admin/detail.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 32)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(57): view('admin/detail', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 02:47:32 --> Class "Geeklabs\Breadcrumbs\Breadcrumb" not found
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-18 02:57:37 --> Undefined property: App\Controllers\Admin::$breadcrumb
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 60)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 03:17:57 --> Undefined array key "call"
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 57)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail('1')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 03:22:22 --> Too few arguments to function App\Controllers\Admin::detail(), 0 passed in /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+ERROR - 2022-01-18 07:48:44 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-01-18 07:48:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(42): CodeIgniter\BaseModel->findAll()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->list()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 08:27:50 --> Undefined array key "username"
+#0 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 08:27:54 --> Undefined array key "username"
+#0 /Users/popo/Documents/anggota/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 09:27:32 --> Undefined property: App\Controllers\Admin::$breadcrumb
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 19)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin->__construct()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 09:39:12 --> Call to undefined function App\Controllers\bread()
+#0 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#5 {main}
+CRITICAL - 2022-01-18 09:41:30 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Controllers/Admin.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 75)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-01-18 09:44:30 --> Undefined variable $anggota
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(64): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 09:44:42 --> Undefined variable $anggota
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(64): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 09:45:18 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(65): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 09:45:21 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(65): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 09:45:41 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/editAnggota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/editAnggo...', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(65): view('admin/editAnggo...', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->edit()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-01-18 10:01:27 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/anggota/app/Views/admin/detail.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 33)
+#1 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('admin/detail', Array, true)
+#4 /Users/popo/Documents/anggota/app/Controllers/Admin.php(79): view('admin/detail', Array)
+#5 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#6 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/anggota/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/anggota/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
