@@ -1,0 +1,7 @@
+CRITICAL - 2022-02-10 05:45:13 --> Too few arguments to function App\Controllers\Admin::detail(), 0 passed in /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Admin->detail()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#5 {main}

@@ -17,11 +17,11 @@ class User extends BaseController
 
     public function index()
     {
-        //$username = session('user');
         $id = session('id');
+
         //$getSync = $this->authModel->where('user', $username)->first();
         $getVerified = $this->userModel->getSync($id);
-        dd($getVerified);
+
         //cek apakah ada session bernama isLogin
         if (!$this->session->has('isLogin')) {
             return redirect()->to('/auth/login');
@@ -70,14 +70,18 @@ class User extends BaseController
         $userDb = $this->authModel->where('user', $user)->first();
         $id = $this->request->getVar('id');
         $pass = $this->request->getVar('pass');
+        $idDb = $userDb['id'];
 
         if ($userDb['pass'] != md5($pass) . $userDb['salt']) {
             session()->setFlashdata('error', 'Password Salah');
             return redirect()->to('/user/confirm');
         } else {
             session()->setFlashdata('success', 'Berhasil di Sinkronisasi. Silahkan Login !');
-            $this->userModel->sync($id);
+            $this->userModel->sync($id, $idDb);
             return view('/auth/login');
         }
+    }
+    public function detail()
+    {
     }
 }

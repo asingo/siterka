@@ -13,7 +13,6 @@ class Admin extends BaseController
 {
     protected $adminModel;
     public function __construct()
-
     {
         $this->breadcrumb = new Breadcrumb();
         $this->adminModel = new \App\Models\AdminModel();
@@ -21,26 +20,24 @@ class Admin extends BaseController
     }
     public function index()
     {
-        // dd($this->adminModel->setTable('user')->findAll());
-        //cek apakah ada session bernama isLogin
+        $data = [
+            'title' => 'Selamat Datang'
+        ];
         if (!$this->session->has('isLogin')) {
             return redirect()->to('/auth/login');
         }
 
-        //cek role dari session
         if ($this->session->get('role') != 1) {
             return redirect()->to('/user/verify');
         }
 
-
-
-        return view('admin/index');
+        return view('admin/index', $data);
     }
     public function list()
     {
         $data = [
             'anggota' => $this->adminModel->findAll(),
-            // 'anggota' => $findAdmin->paginate(10, 'anggota'),
+            'title' => 'Daftar Anggota'
 
 
         ];
@@ -668,32 +665,5 @@ class Admin extends BaseController
 
             return redirect()->to('/admin/list');
         }
-    }
-    public function sort()
-    {
-        $query = $this->request->getVar('query');
-        $currentPage = $this->request->getVar('page_anggota') ? $this->request->getVar('page_anggota') : 1;
-        if ($query) {
-            session()->remove('errorSearch');
-            //dd($this->orangModel->search($keyword)->countAllResults());
-            $count = $this->adminModel->search($query)->countAllResults();
-            if ($count == 0) {
-                session()->setFlashdata('errorSearch', 'Data Tidak Ditemukan.');
-                $findAdmin = $this->adminModel;
-            } else {
-                $findAdmin = $this->adminModel->search($query);
-            }
-        } else {
-            $findAdmin = $this->adminModel;
-        }
-        $data = [
-            // 'anggota' => $this->adminModel->findAll(),
-            'anggota' => $findAdmin->paginate(10, 'anggota'),
-            'pager' => $findAdmin->pager,
-            'currentPage' => $currentPage
-
-        ];
-
-        return view('admin/sort', $data);
     }
 }

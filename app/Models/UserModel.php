@@ -11,6 +11,7 @@ class UserModel extends Model
     protected $allowedFields = ['callsign', 'nik', 'nama', 'alamat', 'kecamatan', 'email', 'nohp', 'foto', 'lakuiar', 'lakukta', 'scaniar', 'fotoktp', 'scankta', 'emailsdppi', 'passsdppi'];
     protected $useTimestamps = true;
 
+
     public function verify($callsign, $lakuiar)
     {
         return $this->where(['callsign' => $callsign, 'lakuiar' => $lakuiar])->first();
@@ -19,22 +20,24 @@ class UserModel extends Model
     {
         return $this->where(['callsign' => $callsign])->first();
     }
-    public function sync($id)
+    public function sync($id, $idUser)
     {
         $db = \Config\Database::connect();
         $builder = $db->table('sinkronisasi');
         $builder->insert([
             'id_orang' => $id,
-            'sync_status' => 1
+            'sync_status' => 1,
+            'id_user' => $idUser
         ]);
         return $builder;
     }
     public function getSync($id)
     {
         $db = \Config\Database::connect();
-        $builder = $db->table('sinkronisasi');
-        $builder->get();
+
+        $query = $db->query("SELECT * FROM anggota.sinkronisasi where id_user =" . $db->escape($id));
+        $r = $query->getResultObject();
         // $builder->where('id_orang', $id)->get;
-        return $builder;
+        return $r;
     }
 }

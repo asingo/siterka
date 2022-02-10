@@ -1,0 +1,104 @@
+ERROR - 2022-02-09 06:44:14 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-09 06:44:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /home/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#10 {main}
+CRITICAL - 2022-02-09 06:46:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-09 07:05:15 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#5 {main}
+CRITICAL - 2022-02-09 07:05:56 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-09 07:11:26 --> Call to a member function select() on null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-09 07:11:27 --> Call to a member function select() on null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-09 07:12:37 --> Call to a member function select() on null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-09 07:12:38 --> Call to a member function select() on null
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+ERROR - 2022-02-09 07:14:58 --> Table 'anggota.anggota' doesn't exist
+CRITICAL - 2022-02-09 07:14:58 --> Table 'anggota.anggota' doesn't exist
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/popo/Documents/siterka/app/Models/UserModel.php(36): CodeIgniter\Database\BaseConnection->query()
+#4 /home/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#10 {main}
+CRITICAL - 2022-02-09 07:23:52 --> syntax error, unexpected end of file
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/popo/Documents/siterka/app/Controllers/User.php(14): spl_autoload_call()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\User->__construct()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#9 {main}
+CRITICAL - 2022-02-09 08:40:43 --> syntax error, unexpected ','
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(790): class_exists()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#9 {main}

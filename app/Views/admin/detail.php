@@ -141,7 +141,7 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="jumbotron" style="height:100%; min-width:100%; position:relative;">
-                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-iar"><img src="/img/iar/<?= $anggota['scaniar']; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
+                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-iar"><img src="<?= $anggota['scaniar'] ? '/img/iar/' . $anggota['scaniar'] : '/img/scan.png'; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
                                             </div>
                                             <div class="modal fade bs-example-modal-lg-iar" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
                                                 <div class="modal-dialog modal-lg">
@@ -153,7 +153,7 @@
                                                             <h4 class="modal-title" id="myModalLabel">Pratinjau Gambar</h4>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <img src="/img/iar/<?= $anggota['scaniar']; ?>" width="100%">
+                                                            <img src="<?= $anggota['scaniar'] ? '/img/iar/' . $anggota['scaniar'] : '/img/scan.png'; ?>" width="100%">
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -171,7 +171,7 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="jumbotron" style="height:100%; min-width:100%; position:relative;">
-                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-ktp"><img src="/img/ktp/<?= $anggota['fotoktp']; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
+                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-ktp"><img src="<?= $anggota['fotoktp'] ? '/img/ktp/' . $anggota['fotoktp'] : '/img/scan.png'; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
                                             </div>
                                             <div class="modal fade bs-example-modal-lg-ktp" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
                                                 <div class="modal-dialog modal-lg">
@@ -183,7 +183,7 @@
                                                             <h4 class="modal-title" id="myModalLabel">Pratinjau Gambar</h4>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <img src="/img/ktp/<?= $anggota['fotoktp']; ?>" width="100%">
+                                                            <img src="<?= $anggota['fotoktp'] ? '/img/ktp/' . $anggota['fotoktp'] : '/img/scan.png'; ?>" width="100%">
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -205,7 +205,7 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="jumbotron" style="height:100%; min-width:100%; position:relative;">
-                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-kta"><img src="/img/kta/<?= $anggota['scankta']; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
+                                                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-kta"><img src="<?= $anggota['scankta'] ? '/img/kta/' . $anggota['scankta'] : '/img/scan.png'; ?>" style=" height:100%; width:100%; max-width:100%;" class="img-preview" width="190" height="300" alt=""></a>
                                             </div>
                                             <div class="modal fade bs-example-modal-lg-kta" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
                                                 <div class="modal-dialog modal-lg">
@@ -217,7 +217,7 @@
                                                             <h4 class="modal-title" id="myModalLabel">Pratinjau Gambar</h4>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <img src="/img/kta/<?= $anggota['scankta']; ?>" width="100%">
+                                                            <img src="<?= $anggota['scankta'] ? '/img/kta/' . $anggota['scankta'] : '/img/scan.png'; ?>" width="100%">
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -279,7 +279,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="jumbotron" style="height:100%; min-width:100%; position:relative;">
-                            <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-anggota"><img src="/img/anggota/<?= $anggota['foto']; ?>" style="height:100%; width:100%; max-width:100%;" class="img-preview" alt=""></a>
+                            <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg-anggota"><img src="<?= $anggota['foto'] ? '/img/anggota/' . $anggota['foto'] : '/img/profile.png'; ?>" style="height:100%; width:100%; max-width:100%;" class="img-preview" alt=""></a>
                         </div>
                         <div class="modal fade bs-example-modal-lg-anggota" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg">
@@ -291,7 +291,7 @@
                                         <h4 class="modal-title" id="myModalLabel">Pratinjau Gambar</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="/img/anggota/<?= $anggota['foto']; ?>" width="100%">
+                                        <img src="<?= $anggota['foto'] ? '/img/anggota/' . $anggota['foto'] : '/img/profile.png'; ?>" width="100%">
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
