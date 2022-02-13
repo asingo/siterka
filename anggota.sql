@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 10, 2022 at 02:51 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: Feb 13, 2022 at 01:01 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `anggota`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `version` varchar(255) NOT NULL,
+  `class` varchar(255) NOT NULL,
+  `group` varchar(255) NOT NULL,
+  `namespace` varchar(255) NOT NULL,
+  `time` int(11) NOT NULL,
+  `batch` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
+(1, '2022-01-16-132403', 'App\\Database\\Migrations\\Anggota', 'default', 'App', 1642340003, 1);
 
 -- --------------------------------------------------------
 
@@ -439,9 +462,63 @@ INSERT INTO `orang` (`id`, `callsign`, `nama`, `alamat`, `kecamatan`, `email`, `
 (382, 'YG2ARB', 'SRI HARYATI', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-10-23', '2026-10-23', NULL, NULL, NULL, NULL, NULL),
 (383, 'a', 'asd', 'asd', 'kecamatan', 'a@a.d', '1643792129_71f78393538a117846c5.png', '12', '1643792129_7dc7f2d0f011c3328b38.jpg', '1643792129_90d59f92781aab8ab2cc.png', '1643792129_c904223c87312fa75081.png', 'asdfasdfasdfasdf', '0000-00-00', '0000-00-00', 'asd', 'asd', '', '2022-02-02 02:55:29', '2022-02-02 02:55:29');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sinkronisasi`
+--
+
+CREATE TABLE `sinkronisasi` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `id_orang` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `sync_status` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sinkronisasi`
+--
+
+INSERT INTO `sinkronisasi` (`id`, `id_orang`, `id_user`, `sync_status`) VALUES
+(2, 252, 2, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL,
+  `id_orang` int(11) NOT NULL,
+  `user` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL,
+  `salt` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `verified` tinyint(1) DEFAULT 0,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `id_orang`, `user`, `pass`, `salt`, `name`, `role`, `pic`, `verified`, `created_at`, `updated_at`) VALUES
+(1, 17, 'yc2cpq', 'a3dcb4d229de6fde0db5686dee47145d61e4ebd369f7e5.17886552', '61e4ebd369f7e5.17886552', 'Indra Hari Setiawan', '1', 'photo.png', NULL, '2022-01-16 22:08:51', '2022-01-16 22:08:51'),
+(2, 252, 'YD2ELT', 'a3dcb4d229de6fde0db5686dee47145d61f9d85bd1d3f3.73003158', '61f9d85bd1d3f3.73003158', 'Anang Pamangsah', '2', 'photo.png', 0, '2022-02-01 19:03:23', '2022-02-01 19:03:23');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `orang`
@@ -450,14 +527,64 @@ ALTER TABLE `orang`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `sinkronisasi`
+--
+ALTER TABLE `sinkronisasi`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `idx_user` (`id_user`) USING BTREE,
+  ADD KEY `idx_orang` (`id_orang`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_orang` (`id_orang`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `orang`
 --
 ALTER TABLE `orang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=384;
+
+--
+-- AUTO_INCREMENT for table `sinkronisasi`
+--
+ALTER TABLE `sinkronisasi`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `sinkronisasi`
+--
+ALTER TABLE `sinkronisasi`
+  ADD CONSTRAINT `sinkronisasi_ibfk_1` FOREIGN KEY (`id_orang`) REFERENCES `orang` (`id`),
+  ADD CONSTRAINT `sinkronisasi_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
+
+--
+-- Constraints for table `user`
+--
+ALTER TABLE `user`
+  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_orang`) REFERENCES `orang` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
