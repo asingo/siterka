@@ -49,4 +49,8 @@ class BaseController extends Controller
 
         $this->session = \Config\Services::session();
     }
+    public function error()
+    {
+        return view('errors/html/error_404');
+    }
 }

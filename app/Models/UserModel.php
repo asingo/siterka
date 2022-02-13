@@ -29,6 +29,8 @@ class UserModel extends Model
             'sync_status' => 1,
             'id_user' => $idUser
         ]);
+        $sql = "update user set id_orang = " . $db->escape($id) . " where id =" . $db->escape($id);
+        $db->query($sql);
         return $builder;
     }
     public function getSync($id)

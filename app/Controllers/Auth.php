@@ -20,6 +20,14 @@ class Auth extends BaseController
 
     public function login()
     {
+        if (session()->get('isLogin')) {
+            if (session()->get('role') == 1) {
+                return redirect()->to('/admin');
+            }
+            if (session()->get('role') == 2) {
+                return redirect()->to('/user');
+            }
+        }
         //menampilkan halaman login
         return view('auth/login');
     }
@@ -91,6 +99,7 @@ class Auth extends BaseController
                 $sessLogin = [
                     'isLogin' => true,
                     'id' => $user['id'],
+                    'id_orang' => $user['id_orang'],
                     'user' => $user['user'],
                     'name' => $user['name'],
                     'role' => $user['role'],

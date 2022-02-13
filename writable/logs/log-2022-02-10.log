@@ -5,3 +5,40 @@ CRITICAL - 2022-02-10 05:45:13 --> Too few arguments to function App\Controllers
 #3 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
 #5 {main}
+ERROR - 2022-02-10 20:09:39 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2022-02-10 20:09:39 --> Unknown column 'id_user' in 'where clause'
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT * FROM a...', 0)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 /Users/popo/Documents/siterka/app/Models/UserModel.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(23): App\Models\UserModel->getSync('2')
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-10 22:10:19 --> Undefined variable $breadcrumb
+#0 /Users/popo/Documents/siterka/app/Views/user/detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 20)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('/user/detail', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(92): view('/user/detail', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->detail()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-10 22:16:05 --> Undefined variable $validation
+#0 /Users/popo/Documents/siterka/app/Views/user/detail.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 42)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('/user/detail', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(95): view('/user/detail', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->detail()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}

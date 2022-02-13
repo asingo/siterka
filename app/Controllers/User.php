@@ -5,12 +5,14 @@ namespace App\Controllers;
 use App\Models\AuthModel;
 use App\Models\UserModel;
 use DateTime;
+use \Geeklabs\Breadcrumbs\Breadcrumb;
 
 class User extends BaseController
 {
     public function __construct()
     {
         $this->session = session();
+        $this->breadcrumb = new Breadcrumb();
         $this->userModel = new UserModel();
         $this->authModel = new AuthModel();
     }
@@ -30,7 +32,11 @@ class User extends BaseController
             return redirect()->to('user/verify');
         }
 
-        return view('user/index');
+        $data = [
+            'title' => 'Selamat Datang'
+        ];
+
+        return view('user/index', $data);
     }
     public function verify()
     {
@@ -83,5 +89,74 @@ class User extends BaseController
     }
     public function detail()
     {
+        $id = session('id_orang');
+        $query = $this->userModel->where('id', $id)->first();
+        $data = [
+            'title' => 'Data Anggota',
+            'anggota' => $query,
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('/user/detail', $data);
+    }
+    public function editFoto($callsign)
+    {
+
+        $getDetail = $this->userModel->where('callsign', $callsign)->first();
+        $data = [
+            'title' => 'Ubah Data Foto Anggota',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/editFoto', $data);
+    }
+    public function editIar($callsign)
+    {
+
+        $getDetail = $this->userModel->where('callsign', $callsign)->first();
+        $data = [
+            'title' => 'Ubah Data Scan IAR Anggota',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/editIar', $data);
+    }
+    public function editKtp($callsign)
+    {
+        $id = $this->request->getVar('id');
+        $getDetail = $this->userModel->where('callsign', $callsign)->first();
+        $data = [
+            'title' => 'Ubah Data Scan KTP Anggota',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/editKtp', $data);
+    }
+    public function editKta($callsign)
+    {
+        $id = $this->request->getVar('id');
+        $getDetail = $this->userModel->where('callsign', $callsign)->first();
+        $data = [
+            'title' => 'Ubah Data Scan KTA',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/editKta', $data);
+    }
+    public function edit($callsign)
+    {
+        // $id = $this->request->getVar('id');
+
+        $getDetail = $this->userModel->getDetail($callsign);
+        $data = [
+            'title' => 'Ubah Data Anggota',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/editAnggota', $data);
     }
 }

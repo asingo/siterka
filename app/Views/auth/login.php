@@ -93,9 +93,9 @@
                 <?php if ($error) { ?>
                     <p style="color:red">Terjadi Kesalahan:
                     <ul>
-                        <?php foreach ($error as $e) { ?>
-                            <li><?php echo $e ?></li>
-                        <?php } ?>
+
+                        <li><?php echo $error ?></li>
+
                     </ul>
                     </p>
                 <?php } ?>

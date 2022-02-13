@@ -32,20 +32,26 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Auth::login');
-$routes->get('/admin', 'Admin::index', ['filter' => 'authGuard']);
-$routes->get('/admin/list', 'Admin::list', ['filter' => 'authGuard']);
-$routes->get('/admin/register', 'Admin::register', ['filter' => 'authGuard']);
-$routes->get('/admin/detail/(:any)', 'Admin::detail/$1', ['filter' => 'authGuard']);
-$routes->get('/admin/edit/foto/(:any)', 'Admin::editFoto/$1', ['filter' => 'authGuard']);
-$routes->get('/admin/edit/iar/(:any)', 'Admin::editIar/$1', ['filter' => 'authGuard']);
-$routes->get('/admin/edit/kta/(:any)', 'Admin::editKta/$1', ['filter' => 'authGuard']);
-$routes->get('/admin/edit/ktp/(:any)', 'Admin::editKtp/$1', ['filter' => 'authGuard']);
-$routes->get('/admin/doEdit', 'Admin::doEdit', ['filter' => 'authGuard']);
-$routes->get('/admin/doEditFoto', 'Admin::doEditFoto', ['filter' => 'authGuard']);
+$routes->get('/admin', 'Admin::index', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/list', 'Admin::list', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/register', 'Admin::register', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/detail/(:any)', 'Admin::detail/$1', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/edit/foto/(:any)', 'Admin::editFoto/$1', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/edit/iar/(:any)', 'Admin::editIar/$1', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/edit/kta/(:any)', 'Admin::editKta/$1', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/edit/ktp/(:any)', 'Admin::editKtp/$1', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/doEdit', 'Admin::doEdit', ['filter' => ['authGuard', 'adminGuard']]);
+$routes->get('/admin/doEditFoto', 'Admin::doEditFoto', ['filter' => ['authGuard', 'adminGuard']]);
 //$routes->get('/auth/valid_register', 'Auth::valid_register');
-$routes->get('/user/verify', 'User::verify', ['filter' => 'authGuard']);
-$routes->get('/user/confirm', 'User::confirm', ['filter' => 'authGuard']);
-$routes->get('/admin/sort', 'Admin::sort', ['filter' => 'authGuard']);
+$routes->get('/user/verify', 'User::verify', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/confirm', 'User::confirm', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/detail', 'User::detail', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/edit/foto/(:any)', 'User::editFoto/$1', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/edit/iar/(:any)', 'User::editIar/$1', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/edit/kta/(:any)', 'User::editKta/$1', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/edit/ktp/(:any)', 'User::editKtp/$1', ['filter' => ['authGuard', 'userGuard']]);
+//$routes->get('/admin/sort', 'Admin::sort', ['filter' => 'authGuard']);
+$routes->get('/error', 'BaseController::error', ['filter' => 'authGuard']);
 
 
 /*

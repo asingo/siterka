@@ -1,0 +1,131 @@
+ERROR - 2022-02-11 01:34:49 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-11 01:34:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-02-11 01:40:56 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-11 01:40:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-02-11 01:43:41 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-11 01:43:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-11 06:17:55 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 80)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-11 08:05:13 --> foreach() argument must be of type array|object, string given
+#0 /Users/popo/Documents/siterka/app/Views/auth/login.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', '/Users/popo/Doc...', 96)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('auth/login', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(24): view('auth/login')
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-11 08:07:29 --> foreach() argument must be of type array|object, string given
+#0 /Users/popo/Documents/siterka/app/Views/auth/login.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', '/Users/popo/Doc...', 96)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('auth/login', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(24): view('auth/login')
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-11 08:08:29 --> Undefined variable $e
+#0 /Users/popo/Documents/siterka/app/Views/auth/login.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 97)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('auth/login', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(24): view('auth/login')
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-11 08:13:26 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Router/Router.php(161): CodeIgniter\Router\RouteCollection->getFilterForRoute('admin')
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-11 08:16:48 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Router/Router.php(161): CodeIgniter\Router\RouteCollection->getFilterForRoute('admin')
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-11 08:17:25 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Router/Router.php(161): CodeIgniter\Router\RouteCollection->getFilterForRoute('admin')
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('admin')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-11 08:19:37 --> adminGuard filter must have a matching alias defined.
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('adminGuard')
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Filters/Filters.php(369): CodeIgniter\Filters\Filters->enableFilter('adminGuard', 'before')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(373): CodeIgniter\Filters\Filters->enableFilters(Array, 'before')
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-11 08:30:04 --> Undefined variable $title
+#0 /Users/popo/Documents/siterka/app/Views/layout/user/template.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/popo/Doc...', 11)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(226): CodeIgniter\View\View->render('layout/user/tem...', Array, true)
+#4 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/index', Array, true)
+#5 /Users/popo/Documents/siterka/app/Controllers/User.php(35): view('user/index')
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#11 {main}

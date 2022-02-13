@@ -66,7 +66,7 @@ class Admin extends BaseController
     }
     public function editFoto($callsign)
     {
-        $id = $this->request->getVar('id');
+
         $getDetail = $this->adminModel->getDetail($callsign);
         $data = [
             'title' => 'Ubah Data Foto Anggota',
@@ -78,7 +78,7 @@ class Admin extends BaseController
     }
     public function editIar($callsign)
     {
-        $id = $this->request->getVar('id');
+
         $getDetail = $this->adminModel->getDetail($callsign);
         $data = [
             'title' => 'Ubah Data Scan IAR Anggota',
