@@ -8,11 +8,7 @@
     <div class="row tile_count">
         <div class="col-md-4 col-sm-8 col-xs-12 tile_stats_count">
             <span class="count_top"><i class="fa fa-user"></i> Total Anggota</span>
-            <div class="count">2500</div>
-        </div>
-        <div class="col-md-4 col-sm-8 col-xs-12 tile_stats_count">
-            <span class="count_top"><i class="fa fa-user"></i> Total Anggota IAR Kadaluarsa</span>
-            <div class="count">2500</div>
+            <div class="count"><?= $jumlah->countAll(); ?></div>
         </div>
     </div>
     <div class="row">

@@ -127,7 +127,7 @@ $lakuKta = $dateKta->format('m/d/Y');
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-3">
-                                        <a href="/user/detail/<?= $anggota['callsign']; ?>" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+                                        <a href="/user/detail" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
                                         <button type="submit" class="btn btn-danger"><i class="fa fa-floppy-o"></i> Ubah Data</button>
                                     </div>
                                 </div>

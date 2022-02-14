@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AuthModel;
+use App\Models\UserModel;
 
 class Auth extends BaseController
 {
@@ -16,6 +17,7 @@ class Auth extends BaseController
 
         //meload session
         $this->session = \Config\Services::session();
+        $this->userModel = new UserModel();
     }
 
     public function login()
@@ -86,6 +88,7 @@ class Auth extends BaseController
 
         //ambil data user di database yang usernamenya sama 
         $user = $this->authModel->where('user', $data['username'])->first();
+        $orang = $this->userModel->where('id', $user['id_orang'])->first();
 
         //cek apakah username ditemukan
         if ($user) {
@@ -103,7 +106,7 @@ class Auth extends BaseController
                     'user' => $user['user'],
                     'name' => $user['name'],
                     'role' => $user['role'],
-                    'pic'  => $user['pic'],
+                    'pic'  => $orang['foto'],
                 ];
                 $this->session->set($sessLogin);
                 //cek role dari session

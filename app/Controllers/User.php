@@ -23,6 +23,7 @@ class User extends BaseController
 
         //$getSync = $this->authModel->where('user', $username)->first();
         $getVerified = $this->userModel->getSync($id);
+        $count = $this->userModel->count();
 
         //cek apakah ada session bernama isLogin
         if (!$this->session->has('isLogin')) {
@@ -33,7 +34,8 @@ class User extends BaseController
         }
 
         $data = [
-            'title' => 'Selamat Datang'
+            'title' => 'Selamat Datang',
+            'jumlah' => $count
         ];
 
         return view('user/index', $data);
@@ -98,8 +100,10 @@ class User extends BaseController
         ];
         return view('/user/detail', $data);
     }
-    public function editFoto($callsign)
+    public function editFoto()
     {
+
+        $callsign = $this->request->getVar('callsign');
 
         $getDetail = $this->userModel->where('callsign', $callsign)->first();
         $data = [
@@ -110,8 +114,9 @@ class User extends BaseController
         ];
         return view('user/editFoto', $data);
     }
-    public function editIar($callsign)
+    public function editIar()
     {
+        $callsign = $this->request->getVar('callsign');
 
         $getDetail = $this->userModel->where('callsign', $callsign)->first();
         $data = [
@@ -122,9 +127,9 @@ class User extends BaseController
         ];
         return view('user/editIar', $data);
     }
-    public function editKtp($callsign)
+    public function editKtp()
     {
-        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
         $getDetail = $this->userModel->where('callsign', $callsign)->first();
         $data = [
             'title' => 'Ubah Data Scan KTP Anggota',
@@ -134,9 +139,9 @@ class User extends BaseController
         ];
         return view('user/editKtp', $data);
     }
-    public function editKta($callsign)
+    public function editKta()
     {
-        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
         $getDetail = $this->userModel->where('callsign', $callsign)->first();
         $data = [
             'title' => 'Ubah Data Scan KTA',
@@ -146,9 +151,9 @@ class User extends BaseController
         ];
         return view('user/editKta', $data);
     }
-    public function edit($callsign)
+    public function editAnggota()
     {
-        // $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
 
         $getDetail = $this->userModel->getDetail($callsign);
         $data = [
@@ -263,7 +268,7 @@ class User extends BaseController
         }
 
 
-        $exc = $this->adminModel->save(
+        $exc = $this->userModel->save(
             [
                 'id' => $id,
                 'scaniar' => $namaScanIar
@@ -310,7 +315,7 @@ class User extends BaseController
         }
 
 
-        $exc = $this->adminModel->save(
+        $exc = $this->userModel->save(
             [
                 'id' => $id,
                 'fotoktp' => $namaFotoKtp
@@ -357,7 +362,7 @@ class User extends BaseController
         }
 
 
-        $exc = $this->adminModel->save(
+        $exc = $this->userModel->save(
             [
                 'id' => $id,
                 'scankta' => $namaScanKta
@@ -488,7 +493,7 @@ class User extends BaseController
         // ];
         // dd($cek);
 
-        $this->adminModel->save([
+        $this->userModel->save([
             'id' => $id,
             'callsign' => $call,
             'nama' => $nama,

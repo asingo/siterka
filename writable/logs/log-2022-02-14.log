@@ -1,0 +1,210 @@
+CRITICAL - 2022-02-14 05:43:49 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 88)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 05:44:04 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 88)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 05:49:36 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 88)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+ERROR - 2022-02-14 05:50:13 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-14 05:50:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\BaseModel->first()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 06:24:46 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editFoto.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 39)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editFoto', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(111): view('user/editFoto', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->editFoto()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 06:32:30 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(161): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->edit('foto')
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 06:35:05 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(161): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->edit('foto')
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 06:37:10 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editFoto.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 39)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editFoto', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(114): view('user/editFoto', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->editFoto()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 07:27:48 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(162): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->edit('foto')
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+ERROR - 2022-02-14 07:35:00 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-02-14 07:35:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(332): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1226): CodeIgniter\Database\MySQLi\Connection->_escapeString('2')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1198): CodeIgniter\Database\BaseConnection->escapeString('2')
+#3 /Users/popo/Documents/siterka/app/Models/UserModel.php(40): CodeIgniter\Database\BaseConnection->escape('2')
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(25): App\Models\UserModel->getSync('2')
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 07:55:26 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(163): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->editAnggota()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 07:55:29 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(163): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->editAnggota()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 08:16:15 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 88)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 08:16:22 --> Undefined array key "username"
+#0 /Users/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/popo/Doc...', 88)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 08:20:01 --> Trying to access array offset on value of type null
+#0 /Users/popo/Documents/siterka/app/Views/user/editAnggota.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Users/popo/Doc...', 4)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/popo/Doc...')
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/editAnggot...', Array, true)
+#4 /Users/popo/Documents/siterka/app/Controllers/User.php(163): view('user/editAnggot...', Array)
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->editAnggota()
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#10 {main}
+CRITICAL - 2022-02-14 08:37:40 --> Undefined property: App\Controllers\User::$adminModel
+#0 /Users/popo/Documents/siterka/app/Controllers/User.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 269)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doEditIar()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 08:38:19 --> Undefined property: App\Controllers\User::$adminModel
+#0 /Users/popo/Documents/siterka/app/Controllers/User.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 316)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doEditKtp()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 08:44:05 --> Undefined property: App\Controllers\User::$adminModel
+#0 /Users/popo/Documents/siterka/app/Controllers/User.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/popo/Doc...', 494)
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->doEdit()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#6 {main}
+CRITICAL - 2022-02-14 08:55:45 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/index', Array, true)
+#3 /Users/popo/Documents/siterka/app/Controllers/User.php(41): view('user/index', Array)
+#4 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}
+CRITICAL - 2022-02-14 08:59:45 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+#0 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(210): include()
+#1 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('user/index', Array, true)
+#3 /Users/popo/Documents/siterka/app/Controllers/User.php(41): view('user/index', Array)
+#4 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->index()
+#5 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/popo/Doc...')
+#9 {main}

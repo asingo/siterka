@@ -9,7 +9,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="/img/<?= session()->get('pic'); ?>" alt=""><?= session()->get('user'); ?>
+                        <img src="/img/anggota/<?= session()->get('pic'); ?>" alt=""><?= session()->get('user'); ?>
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">

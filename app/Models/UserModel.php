@@ -42,4 +42,10 @@ class UserModel extends Model
         // $builder->where('id_orang', $id)->get;
         return $r;
     }
+    public function count()
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('orang');
+        return $builder;
+    }
 }

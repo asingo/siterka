@@ -1,7 +1,7 @@
  <!-- menu profile quick info -->
  <div class="profile clearfix">
      <div class="profile_pic">
-         <img src="/img/<?= session()->get('pic'); ?>" alt="..." class="img-circle profile_img">
+         <img src="/img/anggota/<?= session()->get('pic'); ?>" alt="..." class="img-circle profile_img">
      </div>
      <div class="profile_info">
          <span>Welcome,</span>
@@ -16,7 +16,7 @@
      <div class="menu_section">
          <h3>General</h3>
          <ul class="nav side-menu">
-             <li><a href="/user"><i class=" fa fa-home"></i> Home</a>
+             <li><a href="/"><i class=" fa fa-home"></i> Home</a>
 
              </li>
              <li><a href="/user/detail"><i class="fa fa-users"></i> Data Anggota <span class="fa fa-chevron-down"></span></a>

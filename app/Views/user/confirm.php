@@ -7,9 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Konfirmasi Akun | SiTerKa ORARI Lokal Klaten</title>
-
     <!-- Bootstrap -->
     <link href="/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -18,15 +16,12 @@
     <link href="/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-
     <!-- bootstrap-progressbar -->
     <link href="/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
     <link href="/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
     <link href="/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-
-
     <!-- Custom Theme Style -->
     <link href="/css/custom.min.css" rel="stylesheet">
 </head>
@@ -35,7 +30,6 @@
     <div>
         <a class="hiddenanchor" id="signup"></a>
         <a class="hiddenanchor" id="signin"></a>
-
         <div class="login_wrapper">
             <div class="animate form login_form">
                 <section class="login_content">
@@ -69,17 +63,13 @@
                         <div>
                             <button class="btn btn-default submit" type="submit">Submit</button>
                         </div>
-
                         <div class="clearfix"></div>
-
                         <div class="separator">
                             <p class="change_link">Anda Login Sebagai <b><?= session()->get('user'); ?></b> Klik disini untuk
                                 <a href="/auth/logout" class="to_register"> Logout! </a>
                             </p>
-
                             <div class="clearfix"></div>
                             <br />
-
                             <div>
                                 <img src="/img/backdrop.png">
                                 <br>
@@ -129,9 +119,6 @@
     <!-- bootstrap-daterangepicker -->
     <script src="/vendors/moment/min/moment.min.js"></script>
     <script src="/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- validator -->
-    <!-- <script src="/vendors/validator/validator.js"></script> -->
-
     <!-- Custom Theme Scripts -->
     <script src="/js/custom.min.js"></script>
 </body>
