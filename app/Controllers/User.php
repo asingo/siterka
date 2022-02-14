@@ -159,4 +159,351 @@ class User extends BaseController
         ];
         return view('user/editAnggota', $data);
     }
+    public function callbook()
+    {
+        $anggota = $this->userModel->findAll();
+        $data = [
+            'title' => 'Callbook Anggota',
+            'anggota' => $anggota
+        ];
+        return view('user/callbook', $data);
+    }
+    public function detailCallbook($callsign)
+    {
+        $getDetail = $this->userModel->getDetail($callsign);
+        $data = [
+            'title' => 'Data Anggota',
+            'anggota' => $getDetail,
+            'validation' => \Config\Services::validation(),
+            'breadcrumb' => $this->breadcrumb->buildAuto()
+        ];
+        return view('user/detailCallbook', $data);
+    }
+    public function doEditFoto()
+    {
+        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
+        $fotoLama = $this->request->getVar('oldFoto');
+
+        if (!$this->validate(
+            [
+                'foto' => [
+                    'rules' => 'max_size[foto,2048]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+                    'errors' => [
+                        'max_size' => 'Ukuran Gambar Terlalu Besar',
+                        'is_image' => 'Yang anda pilih bukan gambar',
+                        'mime_in' => 'Silahkan Pilih Format Gambar JPG, JPEG, PNG'
+                    ]
+                ]
+            ]
+        )) {
+            // $validation = \Config\Services::validation();
+            // return redirect()->to('/admin/register')->withInput()->with('validation', $validation);
+            return redirect()->to('/user/edit/foto/' . $callsign)->withInput();
+        }
+
+        //File Upload Controller
+        $fileFoto = $this->request->getFile('foto');
+        if ($fileFoto->getError() == 4) {
+            session()->setFlashdata('error', 'Masukkan Gambar Terlebih Dahulu.');
+            return redirect()->to('/user/edit/foto/' . $callsign);
+        } else {
+            $namaFoto = $fileFoto->getRandomName();
+            $fileFoto->move('img/anggota', $namaFoto);
+            if (!$fotoLama == null) {
+                unlink('img/anggota/' . $fotoLama);
+            }
+        }
+
+
+        $exc = $this->userModel->save(
+            [
+                'id' => $id,
+                'foto' => $namaFoto
+            ]
+        );
+
+        session()->setFlashdata('pesan', 'Data ' . $callsign . ' berhasil diubah.');
+
+        return redirect()->to('/user/detail');
+    }
+    public function doEditIar()
+    {
+        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
+        $scanIarOld = $this->request->getVar('oldScanIar');
+
+        if (!$this->validate(
+            [
+                'scaniar' => [
+                    'rules' => 'max_size[scaniar,2048]|is_image[scaniar]|mime_in[scaniar,image/jpg,image/jpeg,image/png]',
+                    'errors' => [
+                        'max_size' => 'Ukuran Gambar Terlalu Besar',
+                        'is_image' => 'Yang anda pilih bukan gambar',
+                        'mime_in' => 'Silahkan Pilih Format Gambar JPG, JPEG, PNG'
+                    ]
+                ]
+            ]
+        )) {
+            return redirect()->to('/user/edit/iar/' . $callsign)->withInput();
+        }
+
+        //File Upload Controller
+        $fileScanIar = $this->request->getFile('scaniar');
+        if ($fileScanIar->getError() == 4) {
+            session()->setFlashdata('error', 'Masukkan Gambar Terlebih Dahulu.');
+            return redirect()->to('/user/edit/iar/' . $callsign);
+        } else {
+            $namaScanIar = $fileScanIar->getRandomName();
+            $fileScanIar->move('img/iar', $namaScanIar);
+
+            if (!$scanIarOld == null) {
+                unlink('img/iar/' . $scanIarOld);
+            }
+        }
+
+
+        $exc = $this->adminModel->save(
+            [
+                'id' => $id,
+                'scaniar' => $namaScanIar
+            ]
+        );
+
+        session()->setFlashdata('pesan', 'Data ' . $callsign . ' berhasil diubah.');
+
+        return redirect()->to('/user/detail');
+    }
+    public function doEditKtp()
+    {
+        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
+        $fotoKtpOld = $this->request->getVar('oldFotoKtp');
+
+        if (!$this->validate(
+            [
+                'fotoktp' => [
+                    'rules' => 'max_size[fotoktp,2048]|is_image[fotoktp]|mime_in[fotoktp,image/jpg,image/jpeg,image/png]',
+                    'errors' => [
+                        'max_size' => 'Ukuran Gambar Terlalu Besar',
+                        'is_image' => 'Yang anda pilih bukan gambar',
+                        'mime_in' => 'Silahkan Pilih Format Gambar JPG, JPEG, PNG'
+                    ]
+                ]
+            ]
+        )) {
+            return redirect()->to('/user/edit/ktp/' . $callsign)->withInput();
+        }
+
+        //File Upload Controller
+        $fileFotoKtp = $this->request->getFile('fotoktp');
+        if ($fileFotoKtp->getError() == 4) {
+            session()->setFlashdata('error', 'Masukkan Gambar Terlebih Dahulu.');
+            return redirect()->to('/admin/edit/ktp/' . $callsign);
+        } else {
+            $namaFotoKtp = $fileFotoKtp->getRandomName();
+            $fileFotoKtp->move('img/ktp', $namaFotoKtp);
+
+            if (!$fotoKtpOld == null) {
+                unlink('img/ktp/' . $fotoKtpOld);
+            }
+        }
+
+
+        $exc = $this->adminModel->save(
+            [
+                'id' => $id,
+                'fotoktp' => $namaFotoKtp
+            ]
+        );
+
+        session()->setFlashdata('pesan', 'Data ' . $callsign . ' berhasil diubah.');
+
+        return redirect()->to('/user/detail');
+    }
+    public function doEditKta()
+    {
+        $id = $this->request->getVar('id');
+        $callsign = $this->request->getVar('callsign');
+        $scanKtaOld = $this->request->getVar('oldScanKta');
+
+        if (!$this->validate(
+            [
+                'scankta' => [
+                    'rules' => 'max_size[scankta,2048]|is_image[scankta]|mime_in[scankta,image/jpg,image/jpeg,image/png]',
+                    'errors' => [
+                        'max_size' => 'Ukuran Gambar Terlalu Besar',
+                        'is_image' => 'Yang anda pilih bukan gambar',
+                        'mime_in' => 'Silahkan Pilih Format Gambar JPG, JPEG, PNG'
+                    ]
+                ]
+            ]
+        )) {
+            return redirect()->to('/user/edit/kta/' . $callsign)->withInput();
+        }
+
+        //File Upload Controller
+        $fileScanKta = $this->request->getFile('scankta');
+        if ($fileScanKta->getError() == 4) {
+            session()->setFlashdata('error', 'Masukkan Gambar Terlebih Dahulu.');
+            return redirect()->to('/user/edit/kta/' . $callsign);
+        } else {
+            $namaScanKta = $fileScanKta->getRandomName();
+            $fileScanKta->move('img/kta', $namaScanKta);
+
+            if (!$scanKtaOld == null) {
+                unlink('img/kta/' . $scanKtaOld);
+            }
+        }
+
+
+        $exc = $this->adminModel->save(
+            [
+                'id' => $id,
+                'scankta' => $namaScanKta
+            ]
+        );
+
+        session()->setFlashdata('pesan', 'Data ' . $callsign . ' berhasil diubah.');
+
+        return redirect()->to('/user/detail');
+    }
+    public function doEdit()
+    {
+        $id = $this->request->getVar('id');
+
+        if (!$this->validate(
+            [
+                'callsign' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'nik' => [
+                    'rules' => 'required|exact_length[16]',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.',
+                        'exact_length' => 'Masukkan {field} NIK Valid (16 Digit).'
+                    ]
+                ],
+                'nama' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'alamat' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'kecamatan' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'email' => [
+                    'rules' => 'required|valid_email',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.',
+                        'valid_email' => 'Masukkan Email dengan Benar'
+                    ]
+                ],
+                'nohp' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'emailsdppi' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'passsdppi' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'lakuiar' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ],
+                'lakukta' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Kolom {field} harus diisi.'
+                    ]
+                ]
+            ]
+        )) {
+            // $validation = \Config\Services::validation();
+            // return redirect()->to('/admin/register')->withInput()->with('validation', $validation);
+            return redirect()->to('/user/edit/' . $id)->withInput();
+        }
+
+
+        $call = $this->request->getVar('callsign');
+        $nik = $this->request->getVar('nik');
+        $nama = $this->request->getVar('nama');
+        $alamat = $this->request->getVar('alamat');
+        $kecamatan = $this->request->getVar('kecamatan');
+        $email = $this->request->getVar('email');
+        $nohp = $this->request->getVar('nohp');
+        $emailsdppi = $this->request->getVar('emailsdppi');
+        $passsdppi = $this->request->getVar('passsdppi');
+        $lakuiar = $this->request->getVar('lakuiar');
+        $lakukta = $this->request->getVar('lakukta');
+
+        //Initiate DateTime 
+        $initIar = new DateTime($lakuiar);
+        $dateIar = $initIar->format('Y-m-d');
+        $initKta = new DateTime($lakukta);
+        $dateKta = $initKta->format('Y-m-d');
+
+        // }
+        // $cek = [
+        //     'callsign' => $call,
+        //     'nama' => $nama,
+        //     'nik' => $nik,
+        //     'lakuiar' => $dateIar,
+        //     'lakukta' => $dateKta,
+        //     'alamat' => $alamat,
+        //     'kecamatan' => $kecamatan,
+        //     'email' => $email,
+        //     'foto' => $namaFoto,
+        //     'nohp' => $nohp,
+        //     'scaniar' => $namaIar,
+        //     'scankta' => $namaKta,
+        //     'fotoktp' => $namaKtp,
+        //     'emailsdppi' => $emailsdppi,
+        //     'passsdppi' => $passsdppi
+        // ];
+        // dd($cek);
+
+        $this->adminModel->save([
+            'id' => $id,
+            'callsign' => $call,
+            'nama' => $nama,
+            'nik' => $nik,
+            'lakuiar' => $dateIar,
+            'lakukta' => $dateKta,
+            'alamat' => $alamat,
+            'kecamatan' => $kecamatan,
+            'email' => $email,
+            'nohp' => $nohp,
+            'emailsdppi' => $emailsdppi,
+            'passsdppi' => $passsdppi
+        ]);
+        session()->setFlashdata('pesan', 'Data ' . $call . ' berhasil diubah.');
+
+        return redirect()->to('/admin/list');
+    }
 }

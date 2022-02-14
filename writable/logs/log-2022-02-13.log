@@ -1,0 +1,34 @@
+CRITICAL - 2022-02-13 05:54:02 --> Undefined index: id_orang
+#0 /home/popo/Documents/siterka/app/Controllers/Auth.php(102): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-13 06:05:03 --> Undefined index: username
+#0 /home/popo/Documents/siterka/app/Controllers/Auth.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Auth->valid_login()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}
+CRITICAL - 2022-02-13 07:07:24 --> Invalid file: user/callbook.php
+#0 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/popo/Documents/siterka/app/Controllers/User.php(167): view()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->callbook()
+#4 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#8 {main}
+CRITICAL - 2022-02-13 07:36:46 --> Undefined property: App\Controllers\User::$adminModel
+#0 /home/popo/Documents/siterka/app/Controllers/User.php(173): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\User->detailCallbook()
+#2 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/popo/Documents/siterka/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/popo/Documents/siterka/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/home/popo/Docu...')
+#6 {main}

@@ -17,11 +17,11 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+$routes->setDefaultController('Auth');
+$routes->setDefaultMethod('login');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -50,6 +50,8 @@ $routes->get('/user/edit/foto/(:any)', 'User::editFoto/$1', ['filter' => ['authG
 $routes->get('/user/edit/iar/(:any)', 'User::editIar/$1', ['filter' => ['authGuard', 'userGuard']]);
 $routes->get('/user/edit/kta/(:any)', 'User::editKta/$1', ['filter' => ['authGuard', 'userGuard']]);
 $routes->get('/user/edit/ktp/(:any)', 'User::editKtp/$1', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/callbook', 'User::callbook', ['filter' => ['authGuard', 'userGuard']]);
+$routes->get('/user/callbook/lihat/(:any)', 'User::detailCallbook/$1', ['filter' => ['authGuard', 'userGuard']]);
 //$routes->get('/admin/sort', 'Admin::sort', ['filter' => 'authGuard']);
 $routes->get('/error', 'BaseController::error', ['filter' => 'authGuard']);
 

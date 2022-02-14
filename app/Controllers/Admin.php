@@ -114,7 +114,6 @@ class Admin extends BaseController
     }
     public function detail($callsign)
     {
-        $id = $this->request->getVar('id');
         $getDetail = $this->adminModel->getDetail($callsign);
         $data = [
             'title' => 'Data Anggota',
