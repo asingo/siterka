@@ -98,6 +98,12 @@ class Auth extends BaseController
                 session()->setFlashdata('password', 'Password salah');
                 return redirect()->to('/auth/login');
             } else {
+                $pic = $orang['foto'];
+                if ($pic == null) {
+                    $pic = 'photo.png';
+                } else {
+                    $pic = $orang['foto'];
+                }
                 //jika benar, arahkan user masuk ke aplikasi 
                 $sessLogin = [
                     'isLogin' => true,
@@ -106,7 +112,7 @@ class Auth extends BaseController
                     'user' => $user['user'],
                     'name' => $user['name'],
                     'role' => $user['role'],
-                    'pic'  => $orang['foto'],
+                    'pic'  => $pic,
                 ];
                 $this->session->set($sessLogin);
                 //cek role dari session

@@ -20,6 +20,7 @@ class Admin extends BaseController
     }
     public function index()
     {
+
         $data = [
             'title' => 'Selamat Datang'
         ];

@@ -16,9 +16,7 @@
      <div class="menu_section">
          <h3>General</h3>
          <ul class="nav side-menu">
-             <li><a href="/admin"><i class=" fa fa-home"></i> Home</a>
-
-             </li>
+             <li><a href="/admin"><i class="fa fa-home"></i> Home</a></li>
              <li><a href="/admin/list"><i class="fa fa-users"></i> Data Anggota <span class="fa fa-chevron-down"></span></a>
                  <ul class="nav child_menu">
                      <li><a href="/admin/list">List Anggota</a></li>
@@ -27,8 +25,6 @@
              </li>
          </ul>
      </div>
-
-
  </div>
  <!-- /sidebar menu -->
  <!-- /menu footer buttons -->
